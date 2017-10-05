@@ -15,6 +15,6 @@
     "method-override": "^2.3.9",
     "mysql": "^2.14.1",
     "node-spotify-api": "^1.0.6",
-    "request": "^2.81.0",
+    "request": "^2.81.0"
   }
 }

@@ -2,10 +2,10 @@
 var mysql = require("mysql");
 var connection = mysql.createConnection({
   port: 3306,
-  host: "localhost",
-  user: "root",
-  password: "",
-  database: "tester"
+  host: "sql3.freemysqlhosting.net",
+  user: "sql3197838",
+  password: "1KCPXjGsxd",
+  database: "sql3197838"
 });
 // Make connection.
 connection.connect(function(err) {

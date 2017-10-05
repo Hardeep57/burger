@@ -5,6 +5,8 @@ var methodOverride = require("method-override");
 var path = require("path");
 var port = 3000;
 var app = express();
+app.set('port', (process.env.PORT || 5000));
+
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -17,4 +19,6 @@ app.set("view engine", "handlebars");
 // Import routes and give the server access to them.
 var routes = require("./controllers/burgers_Controller.js");
 app.use("/", routes);
-app.listen(port);
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
